@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazyload |</title>
+    <link rel="stylesheet" type="text/css" href="css/lazyload.css" />
+</head>
+<body>
+
+<div id="content">
+
+  <div style="float:left;width:50%">
+    <img src="images/lazy.gif" data-fastPage="images/1.jpg" class="fastPage" />
+  </div>
+
+  <div style="float:left;width:50%">
+    <img src="images/lazy.gif" data-fastPage="images/1.jpg" class="fastPage" />
+  </div>
+
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/1.jpg" class="fastPage" />
+    </figure>
+  </section>
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/2.jpg" class="fastPage" />
+    </figure>
+  </section>
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/3.jpg" class="fastPage" />
+    </figure>
+  </section>
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/4.jpg" class="fastPage" />
+    </figure>
+  </section>
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/5.jpg" class="fastPage" />
+    </figure>
+  </section>
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/6.jpg" class="fastPage" />
+    </figure>
+  </section>
+  <section>
+    <figure>
+        <img src="images/lazy.gif" data-fastPage="images/7.jpg" class="fastPage"/>
+    </figure>
+  </section>
+
+  <figure>
+  <div style="clear:both;overflow: hidden;">
+    <div style="float:left;width:50%">
+      <img src="images/lazy.gif" data-fastPage="images/3.jpg" class="fastPage" />
+    </div>
+  
+    <div style="float:left;width:50%">
+      <img src="images/lazy.gif" data-fastPage="images/3.jpg" class="fastPage" />
+    </div>
+  </div>
+ </figure>
+
+
+</div>
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/fastPage.js"></script>
+
+
+<script>
+$(function() {
+
+    $(".fastPage").fastPage({
+        effect : "zoom", // slide, slideTop, slideBottom, slideLeft, slideRight, zoom
+        loadingImg : "images/lazy.gif"
+    });
+
+})
+</script>
+
+
+
+</body>
+</html>

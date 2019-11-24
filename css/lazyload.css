@@ -1,0 +1,13 @@
+/*reset*/
+body, figure {margin: 0;padding: 0;}
+img {max-width: 100%;}
+/*reset*/
+
+section {text-align: center;margin: 50px 0;}
+.fastPage {opacity: 0;transition: all 0.4s ease;}
+.fastPage.slideTop {transform: translateY(20px);}
+.fastPage.slideBottom {transform: translateY(-20px);}
+.fastPage.slideLeft {transform: translateX(-20px);}
+.fastPage.slideRight {transform: translateX(20px);}
+.fastPage.zoom {transform: scale(0.7);}
+.fastPage.load {opacity: 1;transform: translate(0) scale(1);}
